@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    color: white;
+    background: #ecf4ff;
+    flex-wrap: wrap;
+    margin: 0, auto;
+  }
+  .card_1{
+    display: grid;
+    place-items: center;
+    height: 400px;
+    width: 300px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 50px;
+    background: hsl(31, 77%, 52%);
+  }
+  .card_2{
+    display: grid;
+    place-items: center;
+    height: 400px;
+    width: 300px;
+    padding: 50px;
+    background: hsl(184, 100%, 22%);
+  }
+  .card_3{
+    display: grid;
+    place-items: center;
+    height: 400px;
+    width: 300px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 50px;
+    background: hsl(179, 100%, 13%);
+  }
+  /* Media query for responsiveness */
+@media screen and (min-width: 375px) {
+  body {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  body,
+  html {
+    height: 100%;
+  }
+  .card_1, .card_2, .card_3 {
+    width: fixed;
+    font-size: 100%;
+  }
+} 
+  p,
+  h2 {
+    margin: 0;
+  }
+  .card_1 button {
+    display: grid;
+    place-items: center;
+    min-width: 150px;
+    padding: 4px 0;
+    border-radius: 100px;
+    border: 2px solid white;
+    background: white;
+    color: hsl(31, 77%, 52%);
+  }
+  .card_2 button {
+    display: grid;
+    place-items: center;
+    min-width: 150px;
+    padding: 4px 0;
+    border-radius: 100px;
+    border: 2px solid white;
+    background: white;
+    color: hsl(184, 100%, 22%);
+    font-size: inherit;
+    font-family: inherit;
+  }
+  .card_3 button {
+    display: grid;
+    place-items: center;
+    min-width: 150px;
+    padding: 4px 0;
+    border-radius: 100px;
+    border: 2px solid white;
+    background: white;
+    color: hsl(179, 100%, 13%);
+    font-size: inherit;
+    font-family: inherit;
+  }
+  
+  .card button.primary {
+    background: #b3b4b5;
+    color: #f7f7f7;
+  }
+  .card_1 button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+  }
+  .card_2 button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+  }
+  .card_3 button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+  }
